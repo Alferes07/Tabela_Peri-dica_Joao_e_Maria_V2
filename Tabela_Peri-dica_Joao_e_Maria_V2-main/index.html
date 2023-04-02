@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periodica</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3099/3099267.png" type="image/x-icon">
+</head>
+
+<body>
+    <style>
+        body{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: burlywood;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        tr {
+            display: flex;
+            width: auto;
+            
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            cursor: default;
+        }
+
+        table {
+            max-width: 175%;
+            max-height: 175%;
+            padding: 1fr;
+            margin: auto;
+            display: flex;
+        }
+
+        .hhe {
+            justify-content: space-between;
+        }
+
+        td{
+            font-family: sans-serif;
+            font-size: larger;
+            border: 5px black solid;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            transition: all 0.1s ease;
+        }
+        td:hover{
+            transform: scale(1.2);
+            cursor: default;
+        }
+        th{
+            margin-left: auto;
+        }
+        .t2{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 3%;
+        }
+        .t1{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .A{
+            background-color: #E9B4D9;
+        }
+        .NM{
+            background-color: #a2e661;
+        }
+        .GN{
+            background-color: #64a9e1;
+        }
+        .S{
+            background-color: #4bcabd;
+        }
+        .OM{
+            background-color: #9ec6d3;
+        }
+        .MT{
+            background-color: #F9A9AF;
+        }
+        .MAT{
+            background-color: #e7f349;
+        }
+        .MA{
+            background-color: #f4d250;
+        }
+        .L{
+            background-color: #8dd9e2;
+        }
+        .H{
+            background-color: #a1dff5;
+        }
+    </style>
+    <table>
+        <tr class="hhe">
+            <td class="NM"><a href="categorias_elementos/hidro.html">H</a></td>
+            <td class="GN"><a>He</a></td>
+        </tr>
+        <tr>
+            <td class="MA"><a href="/categorias_elementos/lítio.html">Li</a></td>
+            <td class="MAT"><a>Be</a></td>
+            <th>
+                <td class="S"> <a>B</a></td>
+                <td class="NM"><a href="categorias_elementos/carbono.html">C</a></td>
+                <td class="NM"><a href="/categorias_elementos/nitrogênio.html">N</a></td>
+                <td class="NM"><a href="/categorias_elementos/oxigênio.html">O</a></td>
+                <td class="H"> <a>F</a></td>
+                <td class="GN"><a>Ne</a></td>
+            </th>
+        </tr>
+        <tr>
+            <td class="MA"><a href="/categorias_elementos/sódio.html">Na</a></td>
+            <td class="MAT"><a>Mg</a></td>
+            <th>
+                <td class="OM"><a>Ai</a></td>
+                <td class="S"> <a>Si</a></td>
+                <td class="NM"><a href="/categorias_elementos/fósforo.html">P</a></td>
+                <td class="NM"><a href="/categorias_elementos/enxofre.html">S</a></td>
+                <td class="H"> <a>Cl</a></td>
+                <td class="GN"><a>Ar</a></td>
+            </th>
+        </tr>
+        <tr>
+            <td class="MA"> <a>K</a></td>
+            <td class="MAT"><a>Ca</a></td>
+            <td class="MT"> <a>Sc</a></td>
+            <td class="MT"> <a>Ti</a></td>
+            <td class="MT"> <a>V</a></td>
+            <td class="MT"> <a>Cr</a></td>
+            <td class="MT"> <a>Mn</a></td>
+            <td class="MT"> <a>Fe</a></td>
+            <td class="MT"> <a>Co</a></td>
+            <td class="MT"> <a>Ni</a></td>
+            <td class="MT"> <a>Cu</a></td>
+            <td class="MT"> <a>Zn</a></td>
+            <td class="OM"> <a>Ga</a></td>
+            <td class="S">  <a>Ge</a></td>
+            <td class="S">  <a>As</a></td>
+            <td class="NM"> <a href="/categorias_elementos/selênio.html">Se</a></td>
+            <td class="H">  <a>Br</a></td>
+            <td class="GN"> <a>Kr</a></td>
+        </tr>
+        <tr>
+            <td class="MA"> <a>Rb</a></td>
+            <td class="MAT"><a>Sr</a></td>
+            <td class="MT"> <a>Y</a></td>
+            <td class="MT"> <a>Zr</a></td>
+            <td class="MT"> <a>Nb</a></td>
+            <td class="MT"> <a>Mo</a></td>
+            <td class="MT"> <a>Tc</a></td>
+            <td class="MT"> <a>Ru</a></td>
+            <td class="MT"> <a>Rh</a></td>
+            <td class="MT"> <a>Pd</a></td>
+            <td class="MT"> <a>Ag</a></td>
+            <td class="MT"> <a>Cd</a></td>
+            <td class="OM"> <a>In</a></td>
+            <td class="OM"> <a>Sn</a></td>
+            <td class="S">  <a>Sb</a></td>
+            <td class="S">  <a>Te</a></td>
+            <td class="H">  <a>I</a></td>
+            <td class="GN"> <a>Xe</a></td>
+        </tr>
+        <tr>
+            <td class="MA"><a href="https://pt.wikipedia.org/wiki/Goi%C3%A2nia">Cs</a></td>
+            <td class="MAT">Ba</td>
+        <th>
+            <td class="MT"><a>Hf</a></td>
+            <td class="MT"><a>Ta</a></td>
+            <td class="MT"><a>W</a></td>
+            <td class="MT"><a>Re</a></td>
+            <td class="MT"><a>Os</a></td>
+            <td class="MT"><a>Ir</a></td>
+            <td class="MT"><a>Pt</a></td>
+            <td class="MT"><a>Au</a></td>
+            <td class="MT"><a>Hg</a></td>
+            <td class="OM"><a>Tl</a></td>
+            <td class="OM"><a>Pb</a></td>
+            <td class="OM"><a>Bi</a></td>
+            <td class="S"><a>Po</a></td>
+            <td class="H"><a>At</a></td>
+            <td class="GN"><a>Rn</a></td>
+        </th>
+        </tr>
+        <tr>
+            <td class="MA">Fr</td>
+            <td class="MAT">Ra</td>
+            <th>
+                <td class="MT"><a>Rf</a></td>
+                <td class="MT"><a>Db</a></td>
+                <td class="MT"><a>Sg</a></td>
+                <td class="MT"><a>Bh</a></td>
+                <td class="MT"><a>Hs</a></td>
+                <td class="MT"><a>Mt</a></td>
+                <td class="MT"><a>Ds</a></td>
+                <td class="MT"><a>Rg</a></td>
+                <td class="MT"><a>Cn</a></td>
+                <td class="OM"><a>Nh</a></td>
+                <td class="OM"><a>Fl</a></td>
+                <td class="OM"><a>Mc</a></td>
+                <td class="OM"><a>Lv</a></td>
+                <td class="H"><a>Ts</a></td>
+                <td class="GN"><a>Og</a></td>
+            </th>
+        </tr>
+        <tr class="t2">
+            <td class="L"><a>La</a></td>
+            <td class="L"><a>Ce</a></td>
+            <td class="L"><a>Pr</a></td>
+            <td class="L"><a>Nd</a></td>
+            <td class="L"><a>Pm</a></td>
+            <td class="L"><a>Sm</a></td>
+            <td class="L"><a>Eu</a></td>
+            <td class="L"><a>Gd</a></td>
+            <td class="L"><a>Tb</a></td>
+            <td class="L"><a>Dy</a></td>
+            <td class="L"><a>Ho</a></td>
+            <td class="L"><a>Er</a></td>
+            <td class="L"><a>Tm</a></td>
+            <td class="L"><a>Yb</a></td>
+            <td class="L"><a>Lu</a></td>
+        </tr>
+        <tr class="t1">
+            <td class="A"><a>Ac</a></td>
+            <td class="A"><a>Th</a></td>
+            <td class="A"><a>Pa</a></td>
+            <td class="A"><a>U</a></td>
+            <td class="A"><a>Np</a></td>
+            <td class="A"><a>Pu</a></td>
+            <td class="A"><a>Am</a></td>
+            <td class="A"><a>Cm</a></td>
+            <td class="A"><a>Bk</a></td>
+            <td class="A"><a>Cf</a></td>
+            <td class="A"><a>Es</a></td>
+            <td class="A"><a>Fm</a></td>
+            <td class="A"><a>Md</a></td>
+            <td class="A"><a>No</a></td>
+            <td class="A"><a>Lr</a></td>
+    </table>
+</body>
+</html>
