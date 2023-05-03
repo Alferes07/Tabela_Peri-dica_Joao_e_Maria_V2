@@ -16,7 +16,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: burlywood;
+            background-color: #000408;
         }
         *{
             margin: 0;
@@ -45,6 +45,25 @@
 
         .hhe {
             justify-content: space-between;
+        }
+        
+        .titulo{
+            font-size: 60pt;
+            top:0;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: 10%;
+            font-family: roboto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: url(img/background.gif);
+            background-position: bottom;
+            color: transparent;
+        }
+
+        @font-face {
+            font-family: roboto;
+            src: url(font/Roboto/Roboto-Black.ttf);
         }
 
         td{
@@ -107,6 +126,9 @@
             background-color: #a1dff5;
         }
     </style>
+    <div class="titulo">
+        <p>Tabela Periodica</p>
+    </div>
     <table>
         <tr class="hhe">
             <td class="NM"><a href="categorias_elementos/hidrogênio.html">H</a></td>
